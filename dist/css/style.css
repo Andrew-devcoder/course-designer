@@ -227,3 +227,54 @@ body {
   line-height: 37px;
   color: #FFFFFF;
 }
+.about__body {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.about__item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  counter-increment: count;
+}
+.about__item--reverse {
+  flex-direction: row-reverse;
+  position: relative;
+  counter-increment: count;
+}
+.about__text {
+  display: flex;
+  align-items: flex-end;
+  text-align: end;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+}
+.about__text--reverse {
+  text-align: start;
+  color: #FFFFFF;
+}
+.about__text--reverse::before {
+  content: counter(count, decimal-leading-zero);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 190px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 232px;
+  color: rgba(255, 255, 255, 0.15);
+}
+.about__text::before {
+  content: counter(count, decimal-leading-zero);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 190px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 232px;
+  color: rgba(255, 255, 255, 0.15);
+}
