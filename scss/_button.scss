@@ -1,0 +1,69 @@
+.button {
+    color: #ffffff;
+    background-color: $color-pink;
+
+    &:hover {
+        filter: drop-shadow(0 0 15px #ffffff95);
+        transition: all 0.2s ease;
+    }
+
+    &__intro {
+        padding: 17px 47px;
+        max-width: max-content;
+
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        border: 2px solid $color-pink;
+
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: 0);
+            transition: all 0.2s ease;
+        }
+
+    }
+
+    // &__teacher {
+    //     padding: 17px 47px;
+    //     max-width: max-content;
+
+    //     font-size: 17px;
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     line-height: 21px;
+    // }
+
+    // &__price {
+    //     padding: 17px 64px;
+    //     max-width: max-content;
+
+    //     font-size: 17px;
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     line-height: 21px;
+
+    //     color: #FFFFFF;
+    // }
+
+    // &__submit {
+    //     font-size: 17px;
+    //     font-style: normal;
+    //     font-weight: 400;
+    //     line-height: 21px;
+
+    //     color: #FFFFFF;
+    //     border-radius: 50%;
+    //     max-width: 160px;
+    //     height: 160px;
+
+    //     position: absolute;
+    //     top: 140px;
+    //     right: -100px;
+
+    //     @media screen and (max-width: 1368px) {
+    //         max-width: 140px;
+    //         height: 140px;
+    //     }
+    // }
+}

@@ -1,0 +1,278 @@
+// TODO add focus form style
+
+
+.contact-sign-up {
+    background: linear-gradient(to right, $color-pink 50%, #ffffff 50%);
+    padding: 100px 0 45px;
+
+    &__body {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.contact {
+    width: 50%;
+
+    // .contact__title
+
+    &__title {
+        margin-bottom: 68px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 37px;
+
+        color: #FFFFFF;
+    }
+
+    // .contact__body
+
+    &__body {
+        width: 100%;
+        border: 1px solid #ffffff;
+        border-right: none;
+        padding: 60px;
+
+        @media screen and (max-width: 1368px) {
+            padding: 30px;
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    // .contact__phone
+
+    &__phone {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 0;
+
+        @media screen and (max-width: 1368px) {
+            gap: 15px;
+        }
+
+        & a {
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+    }
+
+    & p {
+        padding: 60px 0;
+        text-align: center;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+
+        color: #FFFFFF;
+
+        @media screen and (max-width: 1368px) {
+            padding: 40px;
+        }
+    }
+
+    // .contact__icons
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        margin: 0 auto;
+        width: max-content;
+        padding: 0 0 60px;
+
+
+
+        @media screen and (max-width: 1368px) {
+            padding: 0 0 40px;
+        }
+
+        & a {
+            width: 40px;
+
+            @media screen and (max-width: 1368px) {
+                width: 35px;
+            }
+        }
+
+    }
+
+    // .contact__location
+
+    &__location {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 60px 0 0;
+    }
+}
+
+.location-title {
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.location-link {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.vertical-line {
+    border-left: 1px solid #ffffff;
+    height: 48px
+}
+
+.horizontal-line {
+    border: 1px solid #FFFFFF;
+    width: 426px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1368px) {
+        width: 326px;
+    }
+}
+
+.sign-up {
+    width: 50%;
+
+    // .sign-up__title
+
+    &__title {
+        margin-bottom: 31px;
+
+        text-align: right;
+
+
+
+        & span {
+            font-style: normal;
+            font-size: 30px;
+            line-height: 37px;
+            color: #000000;
+
+            &.bold {
+                font-weight: 700;
+            }
+
+            &.bold-pink {
+                font-weight: 700;
+                color: $color-pink;
+            }
+
+            &.pink {
+                color: $color-pink;
+            }
+        }
+
+    }
+
+
+
+    // .sign-up__body
+
+    &__body {
+        position: relative;
+
+        padding: 145px 85px;
+        width: 100%;
+
+        border: 1px solid $color-pink;
+        border-left: none;
+
+        @media screen and (max-width: 1368px) {
+            padding: 82px 40px 83px;
+        }
+    }
+
+    &__form {
+        // padding: 164px 0;
+
+        & input {
+            width: 400px;
+            padding: 0 0 10px;
+            margin: 0 0 40px;
+
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 21px;
+
+            color: #585858;
+
+            border-bottom: 1px solid #000000;
+
+            @media screen and (max-width: 1216px) {
+                width: 350px;
+            }
+
+            &[type="submit"] {
+                color: #FFFFFF;
+                padding: 0;
+                cursor: pointer;
+
+                &:hover {
+                    scale: 1.1;
+                    transition: all 0.2s ease;
+                }
+
+                &:active {
+                    scale: 0.9;
+                    transition: all 0.2s ease;
+                }
+            }
+        }
+
+        & select {
+            width: 400px;
+            padding: 0 0 10px;
+            margin: 0 0 40px;
+
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 21px;
+
+            color: #585858;
+
+            border-bottom: 1px solid #000000;
+
+            @media screen and (max-width: 1216px) {
+                width: 350px;
+            }
+
+        }
+    }
+}
+
+.contact__icons a:hover {
+    scale: 1.2;
+    filter: drop-shadow(0 0 15px #f34775);
+    transition: all 0.2s ease;
+}

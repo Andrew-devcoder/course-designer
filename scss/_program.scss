@@ -1,0 +1,163 @@
+.program {
+    position: relative;
+    margin: 264px 0 0;
+    max-width: 100%;
+    z-index: 1;
+
+    @media screen and (min-width: 1601px) {
+        margin: 220px 0 0;
+    }
+
+    @media screen and (max-width: 1440px) {
+        margin: 105px 0 0;
+    }
+
+    @media screen and (max-width: 1367px) {
+        margin: 85px 0 0;
+    }
+
+    @media screen and (max-width: 1140px) {
+        margin: 85px 0 0;
+    }
+
+    // .program__img
+
+    &__img {
+        position: absolute;
+        top: 265px;
+        right: 0;
+        z-index: -1;
+
+        @media screen and (min-width: 1601px) {
+            width: 42%;
+        }
+
+        @media screen and (max-width: 1440px) {
+            width: 40%;
+        }
+
+        @media screen and (max-width: 1367px) {
+            width: 40%;
+            top: 235px;
+        }
+
+        @media screen and (max-width: 1140px) {
+            top: 165px;
+            width: 45%;
+        }
+    }
+
+    // .program__title
+
+    &__title {
+        padding: 120px 0 30px;
+        text-align: center;
+
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 37px;
+
+        color: #FFFFFF;
+
+        @media screen and (max-width: 1140px) {
+            padding: 80px 0 20px;
+        }
+
+    }
+
+    &__line {
+        margin: 0 auto;
+        width: 15%;
+        border: 2px solid #F190AA;
+    }
+
+    // .program__list
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 53px;
+
+        margin: 130px 0 0;
+        padding: 57px 0 58px 130px;
+        width: 83%;
+
+        background: rgba(241, 144, 170, 0.7);
+
+        @media screen and (min-width: 1601px) {
+            margin: 180px 0 0;
+            padding: 70px 0 70px 150px;
+            gap: 60px;
+        }
+
+        @media screen and (max-width: 1367px) {
+            gap: 40px;
+            width: 80%;
+            margin: 100px 0 0;
+            padding: 70px 0 90px 140px;
+        }
+
+        @media screen and (max-width: 1140px) {
+            gap: 35px;
+            width: 77%;
+            margin: 65px 0 0;
+        }
+
+
+        & p {
+            position: relative;
+            counter-increment: li-count;
+
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            color: #000000;
+
+            &::before {
+                content: counter(li-count, decimal-leading-zero);
+                position: absolute;
+                top: -11px;
+                left: -50px;
+
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 34px;
+
+                color: #FAD829;
+
+                @media screen and (min-width: 1601px) {
+                    left: -80px;
+                }
+            }
+        }
+
+    }
+}
+
+.ellipce-program-small {
+    position: absolute;
+    top: 60px;
+    right: 170px;
+
+    @media screen and (max-width: 1140px) {
+        width: 41px;
+        height: 41px;
+        top: 48px px;
+        right: 0;
+        left: 397px;
+    }
+
+}
+
+.ellipce-program {
+    position: absolute;
+    bottom: -65px;
+    right: 560px;
+
+    @media screen and (min-width: 1601px) {
+        right: 570px;
+    }
+}

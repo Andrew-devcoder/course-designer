@@ -1,0 +1,212 @@
+.intro {
+    padding: 126px 0 160px 245px;
+
+    &__title {
+        margin: 0 0 40px;
+
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 55px;
+        text-transform: uppercase;
+
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -95px;
+
+            width: 70px;
+            height: 70px;
+
+            border-radius: 50%;
+            background: $color-pink;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -40px;
+            left: -25px;
+
+            width: 30px;
+            height: 30px;
+
+            border-radius: 50%;
+            border: 5px solid #ffffff;
+        }
+    }
+
+    &__content {
+        margin: 0 0 40px;
+
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+
+        color: #000000;
+    }
+}
+
+
+
+
+
+// // FIXME position ellipce-fill change to % 
+// // FIXME maybe change position ellipse-dached and change size 
+// .intro {
+//     padding: 128px 0 219px;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 40px;
+
+//     @media screen and (max-width: 1440px) {
+//         padding: 128px 0 130px;
+//     }
+
+//     @media screen and (max-width: 1367px) {
+//         padding: 128px 0 119px;
+//     }
+
+//     @media screen and (max-width: 1140px) {
+//         padding: 98px 0 119px;
+//     }
+
+//     // .intro__title
+
+//     &__title {
+//         font-size: 45px;
+//         font-style: normal;
+//         font-weight: 700;
+//         line-height: 55px;
+//         text-transform: uppercase;
+
+//         z-index: 1;
+
+//         @media screen and (max-width: 1140px) {
+//             font-size: 40px;
+//         }
+
+
+//     }
+
+//     // .intro__content
+
+//     &__content {
+//         font-size: 17px;
+//         font-style: normal;
+//         font-weight: 400;
+//         line-height: 21px;
+//     }
+
+//     // .intro__img
+
+//     &__img {
+//         position: absolute;
+//         top: -80px;
+//         right: 0;
+//         z-index: -1;
+
+//         @media screen and (min-width: 1601px) {
+//             width: 40%;
+//         }
+
+//         @media screen and (max-width: 1440px) {
+//             width: 40%;
+//         }
+
+//         @media screen and (max-width: 1367px) {
+//             width: 40%;
+//         }
+
+//         @media screen and (max-width: 1140px) {
+//             width: 40%;
+//         }
+
+
+//         @media screen and (max-width: 768px) {
+//             width: 60%;
+//         }
+
+//     }
+// }
+
+
+
+// }
+
+// .ellipce-dashed {
+//     position: absolute;
+//     right: 0;
+//     top: 478px;
+//     z-index: -1;
+
+//     @media screen and (max-width: 1440px) {
+//         top: 338px;
+//         width: 14%;
+//     }
+
+//     @media screen and (max-width: 1367px) {
+//         width: 14%;
+//         top: 288px;
+//     }
+
+//     @media screen and (max-width: 1140px) {
+//         width: 15%;
+//         top: 208px;
+//     }
+// }
+
+// .bg-decor-intro {
+//     position: relative;
+// }
+
+// .vecor-intro {
+//     position: absolute;
+//     top: 480px;
+//     left: auto;
+//     width: 100%;
+//     overflow-y: hidden;
+
+//     @media screen and (min-width: 1601px) {
+//         top: 450px;
+//     }
+
+//     @media screen and (max-width: 1440px) {
+//         top: 370px;
+//     }
+
+//     @media screen and (max-width: 1367px) {
+//         top: 370px;
+//     }
+
+//     @media screen and (max-width: 1140px) {
+//         top: 350px;
+//     }
+// }
+
+
+
+// .ellips-fill {
+//     position: absolute;
+//     top: 110px;
+//     left: 120px;
+
+//     width: 70px;
+//     height: 70px;
+
+//     border-radius: 50%;
+//     background: $color-pink;
+
+//     @media screen and (min-width: 1601px) {
+//         top: 110px;
+//         left: 220px;
+//     }
+
+//     @media screen and (max-width: 1367px) {
+//         left: 30px;
+//     }
+// }
