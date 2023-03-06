@@ -315,3 +315,170 @@ body {
   height: 100px;
   border: 2px solid pink;
 }
+
+.program {
+  position: relative;
+  margin: 264px 0 0;
+  max-width: 100%;
+  z-index: 1;
+}
+@media screen and (min-width: 1601px) {
+  .program {
+    margin: 220px 0 0;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .program {
+    margin: 105px 0 0;
+  }
+}
+@media screen and (max-width: 1367px) {
+  .program {
+    margin: 85px 0 0;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .program {
+    margin: 85px 0 0;
+  }
+}
+.program__img {
+  position: absolute;
+  top: 265px;
+  right: 0;
+  z-index: -1;
+}
+@media screen and (min-width: 1601px) {
+  .program__img {
+    width: 42%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .program__img {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1367px) {
+  .program__img {
+    width: 40%;
+    top: 235px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .program__img {
+    top: 165px;
+    width: 45%;
+  }
+}
+.program__title {
+  padding: 120px 0 30px;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 37px;
+  color: #FFFFFF;
+  position: relative;
+}
+.program__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  z-index: 30;
+  background-image: url(../dist/img/decor/program-ellipse.png);
+}
+@media screen and (max-width: 1140px) {
+  .program__title {
+    padding: 80px 0 20px;
+  }
+}
+.program__line {
+  margin: 0 auto;
+  width: 15%;
+  border: 2px solid #F190AA;
+}
+.program__list {
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+  margin: 130px 0 0;
+  padding: 57px 0 58px 130px;
+  width: 83%;
+  background: rgba(241, 144, 170, 0.7);
+}
+@media screen and (min-width: 1601px) {
+  .program__list {
+    margin: 180px 0 0;
+    padding: 70px 0 70px 150px;
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 1367px) {
+  .program__list {
+    gap: 40px;
+    width: 80%;
+    margin: 100px 0 0;
+    padding: 70px 0 90px 140px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .program__list {
+    gap: 35px;
+    width: 77%;
+    margin: 65px 0 0;
+  }
+}
+.program__list p {
+  position: relative;
+  counter-increment: li-count;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+}
+.program__list p::before {
+  content: counter(li-count, decimal-leading-zero);
+  position: absolute;
+  top: -11px;
+  left: -50px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  color: #FAD829;
+}
+@media screen and (min-width: 1601px) {
+  .program__list p::before {
+    left: -80px;
+  }
+}
+
+.ellipce-program-small {
+  position: absolute;
+  top: 60px;
+  right: 170px;
+}
+@media screen and (max-width: 1140px) {
+  .ellipce-program-small {
+    width: 41px;
+    height: 41px;
+    top: 48px px;
+    right: 0;
+    left: 397px;
+  }
+}
+
+.ellipce-program {
+  position: absolute;
+  bottom: -65px;
+  right: 560px;
+}
+@media screen and (min-width: 1601px) {
+  .ellipce-program {
+    right: 570px;
+  }
+}
