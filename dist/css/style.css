@@ -250,7 +250,7 @@ body {
   align-items: flex-end;
   text-align: end;
   flex-basis: 445px;
-  margin: 0 245px 0 0;
+  margin-right: max(15px, 100% - 1355px);
   font-size: 17px;
   font-weight: 400;
   font-style: normal;
@@ -260,7 +260,7 @@ body {
   content: counter(count, decimal-leading-zero);
   position: absolute;
   top: 0;
-  right: 245px;
+  right: max(15px, 100% - 1355px);
   font-size: 190px;
   font-style: normal;
   font-weight: 900;
@@ -268,7 +268,7 @@ body {
   color: rgba(112, 123, 184, 0.15);
 }
 .about__text--reverse {
-  margin: 0 0 0 245px;
+  margin-left: max(15px, 100% - 1355px);
   text-align: start;
   color: #FFFFFF;
 }
@@ -276,12 +276,17 @@ body {
   content: counter(count, decimal-leading-zero);
   position: absolute;
   top: 0;
-  left: 245px;
+  left: max(15px, 100% - 1355px);
   font-size: 190px;
   font-style: normal;
   font-weight: 900;
   line-height: 232px;
   color: rgba(255, 255, 255, 0.15);
+}
+.about__img {
+  max-width: 690px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .about__img--regtangle-bold {
   position: relative;
@@ -294,6 +299,7 @@ body {
   z-index: 200;
   width: 672px;
   height: 410px;
+  box-sizing: border-box;
   border: 10px solid #707BB8;
 }
 .about__img--regtangle-slim {

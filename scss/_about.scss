@@ -27,7 +27,6 @@
         position: relative;
         counter-increment: count;
 
-
         &--reverse {
             flex-direction: row-reverse;
 
@@ -41,7 +40,8 @@
         align-items: flex-end;
         text-align: end;
         flex-basis: 445px;
-        margin: 0 245px 0 0;
+
+        margin-right: max(15px, calc(100% - 1355px));
 
         font-size: 17px;
         font-weight: 400;
@@ -53,7 +53,7 @@
 
             position: absolute;
             top: 0;
-            right: 245px;
+            right: max(15px, calc(100% - 1355px));
 
             font-size: 190px;
             font-style: normal;
@@ -64,7 +64,7 @@
         }
 
         &--reverse {
-            margin: 0 0 0 245px;
+            margin-left: max(15px, calc(100% - 1355px));
             text-align: start;
             color: #FFFFFF;
 
@@ -73,7 +73,7 @@
 
                 position: absolute;
                 top: 0;
-                left: 245px;
+                left: max(15px, calc(100% - 1355px));
 
                 font-size: 190px;
                 font-style: normal;
@@ -83,6 +83,11 @@
                 color: rgba(255, 255, 255, 0.15);
             }
         }
+    }
+
+    &__img {
+        max-width: 690px;
+        object-fit: contain;
     }
 
     &__img--regtangle-bold {
@@ -98,6 +103,7 @@
             width: 672px;
             height: 410px;
 
+            box-sizing: border-box;
             border: 10px solid #707BB8;
         }
     }
